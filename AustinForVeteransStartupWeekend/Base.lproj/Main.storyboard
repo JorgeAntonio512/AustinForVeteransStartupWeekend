@@ -44,6 +44,116 @@
             </objects>
             <point key="canvasLocation" x="750" y="-320"/>
         </scene>
+        <!--To Open Settings View Controller-->
+        <scene sceneID="zWF-zl-cpo">
+            <objects>
+                <viewController id="lPe-dP-PeB" customClass="toOpenSettingsViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="jE6-ko-fzC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-kM-jwS">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your settings to use your current location on the map." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-da-q60">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="200" id="ds9-Zx-eQS"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ghl-35-mhA">
+                                        <rect key="frame" x="0.0" y="200" width="375" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="settings_icon" translatesAutoresizingMaskIntoConstraints="NO" id="aqa-VK-Vmk">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="Fw8-Hg-zSX"/>
+                                                    <constraint firstAttribute="height" constant="50" id="npS-Cs-mS0"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1. Go to Settings." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eD1-G3-dYH">
+                                                <rect key="frame" x="50" y="0.0" width="325" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FRR-tc-ZGL">
+                                        <rect key="frame" x="0.0" y="250" width="375" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="location_arrow" translatesAutoresizingMaskIntoConstraints="NO" id="J4s-NR-Gew">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="TBz-Ms-jxQ"/>
+                                                    <constraint firstAttribute="height" constant="50" id="jQc-SD-B6s"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2. Tap Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TtK-lt-B65">
+                                                <rect key="frame" x="50" y="0.0" width="325" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vSf-V5-tVT">
+                                        <rect key="frame" x="0.0" y="300" width="375" height="50"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="checkmark" translatesAutoresizingMaskIntoConstraints="NO" id="c4A-SU-TT6">
+                                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="50" id="JqR-Mu-3r3"/>
+                                                    <constraint firstAttribute="height" constant="50" id="dMb-wP-JqQ"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="3. Set &quot;Allow Location Access&quot; to &quot;While Using the App&quot;." lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="exW-G3-6I8">
+                                                <rect key="frame" x="50" y="0.0" width="325" height="50"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-vW-0Uc">
+                                        <rect key="frame" x="0.0" y="350" width="375" height="148.5"/>
+                                        <state key="normal" title="Open Settings"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Uy-qeU">
+                                        <rect key="frame" x="0.0" y="498.5" width="375" height="148.5"/>
+                                        <state key="normal" title="Close"/>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="rUB-Uy-qeU" firstAttribute="height" secondItem="4SU-vW-0Uc" secondAttribute="height" id="VPW-iY-Sxc"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="PjU-kM-jwS" firstAttribute="trailing" secondItem="Kro-pz-Jvx" secondAttribute="trailing" id="c8q-QZ-Hgk"/>
+                            <constraint firstItem="Kro-pz-Jvx" firstAttribute="bottom" secondItem="PjU-kM-jwS" secondAttribute="bottom" id="hof-IA-qRd"/>
+                            <constraint firstItem="Kro-pz-Jvx" firstAttribute="top" secondItem="PjU-kM-jwS" secondAttribute="top" id="i9S-eM-gAG"/>
+                            <constraint firstItem="PjU-kM-jwS" firstAttribute="leading" secondItem="Kro-pz-Jvx" secondAttribute="leading" id="leX-Xz-ycj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kro-pz-Jvx"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5wP-IH-Z78" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1608.8" y="-1154.5727136431785"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Yo8-bC-3tm">
+            <objects>
+                <viewController id="du7-6T-CHM" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="MUO-i8-cvk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-284" y="-1175"/>
+        </scene>
         <!--Welcome!-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
@@ -124,7 +234,10 @@
         </scene>
     </scenes>
     <resources>
+        <image name="checkmark" width="200" height="173"/>
         <image name="handWave" width="25" height="25"/>
+        <image name="location_arrow" width="310" height="310"/>
         <image name="plane" width="18" height="15"/>
+        <image name="settings_icon" width="600" height="575"/>
     </resources>
 </document>

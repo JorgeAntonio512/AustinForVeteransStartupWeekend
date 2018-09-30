@@ -22,6 +22,26 @@ class MapkitViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let locationManager = CLLocationManager()
+        locationManager.delegate = self as? CLLocationManagerDelegate
+        locationManager.desiredAccuracy = kCLLocationAccuracyBest
+        
+        // Check for Location Services
+        if (CLLocationManager.locationServicesEnabled()) {
+            locationManager.requestWhenInUseAuthorization()
+        }
+        
+        //Zoom to user location
+        if let userLocation = locationManager.location?.coordinate {
+            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 50, longitudinalMeters: 50)
+            mapView.setRegion(viewRegion, animated: false)
+        }
+        
+        self.locationManager = locationManager
+        
+        DispatchQueue.main.async {
+            self.locationManager.startUpdatingLocation()
+        }
         let navigationTitleFont = UIFont(name: "AvenirNext-Regular", size: 18)!
 //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: navigationTitleFont, NSAttributedStringKey.foregroundColor: UIColor.white]
         mapView.userTrackingMode = .follow
@@ -83,11 +103,11 @@ class MapkitViewController: UIViewController {
         }
         else if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.denied){
             print("User denied access to location. this is da whey.")
-            performSegue(withIdentifier: "toOpenSettings", sender: self)
         }
         else if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.notDetermined){
             print("Location status not determined. Scrubby.")
             checkLocationAuthorizationStatus()
+            
         }
         else{
             print("not getting location")
@@ -99,12 +119,13 @@ class MapkitViewController: UIViewController {
     
     // MARK: - CLLocationManager
     
-    let locationManager = CLLocationManager()
+    var locationManager = CLLocationManager()
     func checkLocationAuthorizationStatus() {
         if CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             mapView.showsUserLocation = true
         } else {
             print("Location status not determined.")
+            locationManager.requestWhenInUseAuthorization()
 //            performSegue(withIdentifier: "toEnableLoc", sender: self)
         }
     }
