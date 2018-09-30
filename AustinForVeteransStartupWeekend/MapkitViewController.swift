@@ -27,9 +27,7 @@ class MapkitViewController: UIViewController {
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
         
         // Check for Location Services
-        if (CLLocationManager.locationServicesEnabled()) {
-            locationManager.requestWhenInUseAuthorization()
-        }
+    
         
         //Zoom to user location
         if let userLocation = locationManager.location?.coordinate {
@@ -103,6 +101,7 @@ class MapkitViewController: UIViewController {
         }
         else if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.denied){
             print("User denied access to location. this is da whey.")
+            performSegue(withIdentifier: "toOpenSettings", sender: self)
         }
         else if (CLLocationManager.authorizationStatus() == CLAuthorizationStatus.notDetermined){
             print("Location status not determined. Scrubby.")
@@ -125,8 +124,7 @@ class MapkitViewController: UIViewController {
             mapView.showsUserLocation = true
         } else {
             print("Location status not determined.")
-            locationManager.requestWhenInUseAuthorization()
-//            performSegue(withIdentifier: "toEnableLoc", sender: self)
+                   performSegue(withIdentifier: "toEnableLoc", sender: self)
         }
     }
     

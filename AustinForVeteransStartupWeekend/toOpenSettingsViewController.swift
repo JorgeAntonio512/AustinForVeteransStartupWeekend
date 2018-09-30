@@ -14,6 +14,9 @@ class toOpenSettingsViewController: UIViewController {
     
     var locationManager = CLLocationManager()
     
+    @IBOutlet weak var openSettingsButton: UIButton?
+    @IBOutlet weak var closeBtn: UIButton?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -21,7 +24,7 @@ class toOpenSettingsViewController: UIViewController {
     }
     
     
-    @IBAction func buttonPressed(sender: AnyObject) {
+    @IBAction func buttonPressed(sender: UIButton) {
         let path = UIApplication.openSettingsURLString
         if let settingsURL = URL(string: path), UIApplication.shared.canOpenURL(settingsURL) {
             UIApplication.shared.openURL(settingsURL)
@@ -29,7 +32,7 @@ class toOpenSettingsViewController: UIViewController {
     }
     
     
-    @IBAction func closePressed(_ sender: Any) {
+    @IBAction func closePressed(sender: UIButton) {
         if(CLLocationManager.authorizationStatus() == CLAuthorizationStatus.authorizedWhenInUse){
             DispatchQueue.main.async {
                 // Update UI
