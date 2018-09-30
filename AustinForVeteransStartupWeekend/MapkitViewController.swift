@@ -31,8 +31,10 @@ class MapkitViewController: UIViewController {
         
         //Zoom to user location
         if let userLocation = locationManager.location?.coordinate {
-            let viewRegion = MKCoordinateRegion(center: userLocation, latitudinalMeters: 50, longitudinalMeters: 50)
-            mapView.setRegion(viewRegion, animated: false)
+            var viewRegion = MKCoordinateRegion()
+            viewRegion.span = MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7)
+            viewRegion.center = userLocation
+            mapView.setRegion(viewRegion, animated: true)
         }
         
         self.locationManager = locationManager
@@ -42,12 +44,12 @@ class MapkitViewController: UIViewController {
         }
         let navigationTitleFont = UIFont(name: "AvenirNext-Regular", size: 18)!
 //        self.navigationController?.navigationBar.titleTextAttributes = [NSAttributedString.Key.font: navigationTitleFont, NSAttributedStringKey.foregroundColor: UIColor.white]
-        mapView.userTrackingMode = .follow
-        var region = MKCoordinateRegion()
-        region.span = MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7); //Zoom distance
-        let coordinate = CLLocationCoordinate2D(latitude: 30.265212, longitude: -97.756050)
-        region.center = coordinate
-        mapView.setRegion(region, animated: true)
+        mapView.showsUserLocation = true
+//        var region = MKCoordinateRegion()
+//        region.span = MKCoordinateSpan(latitudeDelta: 0.7, longitudeDelta: 0.7); //Zoom distance
+//        let coordinate = CLLocationCoordinate2D(latitude: 30.265212, longitude: -97.756050)
+//        region.center = coordinate
+//        mapView.setRegion(region, animated: true)
         
         mapView.delegate = self
         if #available(iOS 11.0, *) {
@@ -127,14 +129,15 @@ class MapkitViewController: UIViewController {
                    performSegue(withIdentifier: "toEnableLoc", sender: self)
         }
     }
+
     
     // MARK: - Helper methods
     
-    func centerMapOnLocation(location: CLLocation) {
-        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
-                                                  latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
-        mapView.setRegion(coordinateRegion, animated: true)
-    }
+//    func centerMapOnLocation(location: CLLocation) {
+//        let coordinateRegion = MKCoordinateRegion(center: location.coordinate,
+//                                                  latitudinalMeters: regionRadius, longitudinalMeters: regionRadius)
+//        mapView.setRegion(coordinateRegion, animated: true)
+//    }
     
     
     func loadInitialData() {

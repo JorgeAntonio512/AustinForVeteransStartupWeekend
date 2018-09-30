@@ -18,10 +18,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="ojD-W7-AdG">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="k0j-oP-gqi">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="554"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="598"/>
                                     </mapView>
                                 </subviews>
                             </stackView>
@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="PjU-kM-jwS">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Change your settings to use your current location on the map." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oR2-da-q60">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="200"/>
@@ -121,14 +121,14 @@
                                         </subviews>
                                     </stackView>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4SU-vW-0Uc">
-                                        <rect key="frame" x="0.0" y="350" width="375" height="126.5"/>
+                                        <rect key="frame" x="0.0" y="350" width="375" height="148.5"/>
                                         <state key="normal" title="Open Settings"/>
                                         <connections>
                                             <action selector="buttonPressedWithSender:" destination="lPe-dP-PeB" eventType="touchUpInside" id="7Ek-Lw-2yu"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUB-Uy-qeU">
-                                        <rect key="frame" x="0.0" y="476.5" width="375" height="126.5"/>
+                                        <rect key="frame" x="0.0" y="498.5" width="375" height="148.5"/>
                                         <state key="normal" title="Close"/>
                                         <connections>
                                             <action selector="closePressedWithSender:" destination="lPe-dP-PeB" eventType="touchUpInside" id="GlW-GS-YwG"/>
@@ -168,7 +168,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="zUV-HI-1M2">
-                                <rect key="frame" x="0.0" y="64" width="375" height="603"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Enable location sharing" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Aho-ra-UhL">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="100"/>
@@ -179,7 +179,7 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This lets you see where all the cool events are happening nearby!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMV-bd-FJ8">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This lets you see where all the Honor Flights are happening nearby!" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tMV-bd-FJ8">
                                         <rect key="frame" x="0.0" y="100" width="375" height="100"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="100" id="19L-ki-CSZ"/>
@@ -189,14 +189,14 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="oLx-iD-KAi">
-                                        <rect key="frame" x="0.0" y="200" width="375" height="403"/>
+                                        <rect key="frame" x="0.0" y="200" width="375" height="447"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UW1-ki-GHF">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="0.0"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                             <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="F3A-iV-5KF">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="120"/>
+                                                <rect key="frame" x="0.0" y="44" width="375" height="120"/>
                                                 <subviews>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ah-GP-dVe">
                                                         <rect key="frame" x="0.0" y="0.0" width="187.5" height="120"/>
@@ -219,7 +219,7 @@
                                                 </constraints>
                                             </stackView>
                                             <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Ihg-D8-2ll">
-                                                <rect key="frame" x="0.0" y="120" width="375" height="283"/>
+                                                <rect key="frame" x="0.0" y="164" width="375" height="283"/>
                                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </view>
                                         </subviews>
@@ -257,31 +257,29 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="bse-L4-nFB">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="598"/>
                                 <subviews>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Hi there!                 😀" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Lts-cI-z1j">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="138.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="149.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="48"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="fif-fl-Cd6">
-                                        <rect key="frame" x="0.0" y="138.5" width="375" height="138.5"/>
+                                        <rect key="frame" x="0.0" y="149.5" width="375" height="149.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">If you're seeing this page, there's a good chance you're a veteran or a family member/friend of a veteran. So we want to sincerely thank you. To thank you for your service, whatever form that's taken. Our country owes you.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="🇺🇸" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="4h8-NQ-zov">
-                                        <rect key="frame" x="0.0" y="277" width="375" height="138.5"/>
+                                        <rect key="frame" x="0.0" y="299" width="375" height="149.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="80"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="TQZ-zo-6G4">
-                                        <rect key="frame" x="0.0" y="415.5" width="375" height="138.5"/>
+                                        <rect key="frame" x="0.0" y="448.5" width="375" height="149.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                        <string key="text">Please use the "Honor Flight" tab at the bottom of your screen to see the map of all the regional Honor Flight hubs. For your convenience it is set to your location so you can find your nearest airport. Click on the red flag icon at the airport you're interested in. When the information window opens, you will see some descriptive text in the middle, a little blue "i" icon on the left, and a map icon on the right. If you wish to find out the point(s) of contact, press the little blue "i", and it will take you to the Honor Flight Network webpage with the relevant information. If you wish to open Maps and get directions to the airport, press the map icon.</string>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
@@ -303,6 +301,10 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Welcome!" image="handWave" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="instructions" destination="TQZ-zo-6G4" id="Qbt-mR-H9N"/>
+                        <outlet property="thanks" destination="fif-fl-Cd6" id="pAU-gr-RXX"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -348,10 +350,10 @@
         <image name="checkmark" width="200" height="173"/>
         <image name="handWave" width="25" height="25"/>
         <image name="location_arrow" width="310" height="310"/>
-        <image name="plane" width="18" height="15"/>
+        <image name="plane" width="25" height="25"/>
         <image name="settings_icon" width="600" height="575"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kUP-c3-l2r"/>
+        <segue reference="h9z-4p-ESu"/>
     </inferredMetricsTieBreakers>
 </document>
