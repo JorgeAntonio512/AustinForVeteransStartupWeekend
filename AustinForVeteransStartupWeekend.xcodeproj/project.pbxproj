@@ -12,6 +12,7 @@
 		3D018F9E215FEBFF00B7A7F3 /* Artwork.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D018F9D215FEBFF00B7A7F3 /* Artwork.swift */; };
 		3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */; };
 		3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */; };
+		3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D4BF1E72162D190004FB33C /* landingPageViewController.swift */; };
 		3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B60D215FE15900C68F56 /* AppDelegate.swift */; };
 		3D83B610215FE15900C68F56 /* MapkitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B60F215FE15900C68F56 /* MapkitViewController.swift */; };
 		3D83B612215FE15900C68F56 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D83B611215FE15900C68F56 /* SecondViewController.swift */; };
@@ -47,6 +48,7 @@
 		3D018F9D215FEBFF00B7A7F3 /* Artwork.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Artwork.swift; sourceTree = "<group>"; };
 		3D018F9F215FEC5D00B7A7F3 /* ArtworkViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkViews.swift; sourceTree = "<group>"; };
 		3D3E0A7D216057D6004F3462 /* EnableLocationSharingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EnableLocationSharingViewController.swift; sourceTree = "<group>"; };
+		3D4BF1E72162D190004FB33C /* landingPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = landingPageViewController.swift; sourceTree = "<group>"; };
 		3D83B60A215FE15900C68F56 /* AustinForVeteransStartupWeekend.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AustinForVeteransStartupWeekend.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D83B60D215FE15900C68F56 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D83B60F215FE15900C68F56 /* MapkitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapkitViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				3D83B60D215FE15900C68F56 /* AppDelegate.swift */,
+				3D4BF1E72162D190004FB33C /* landingPageViewController.swift */,
 				3D83B60F215FE15900C68F56 /* MapkitViewController.swift */,
 				3D83B611215FE15900C68F56 /* SecondViewController.swift */,
 				3D83B613215FE15900C68F56 /* Main.storyboard */,
@@ -405,6 +408,7 @@
 				3D83B612215FE15900C68F56 /* SecondViewController.swift in Sources */,
 				3D018FA0215FEC5D00B7A7F3 /* ArtworkViews.swift in Sources */,
 				3D83B60E215FE15900C68F56 /* AppDelegate.swift in Sources */,
+				3D4BF1E82162D190004FB33C /* landingPageViewController.swift in Sources */,
 				3D3E0A7E216057D6004F3462 /* EnableLocationSharingViewController.swift in Sources */,
 				3D018F9E215FEBFF00B7A7F3 /* Artwork.swift in Sources */,
 				3D97D299216050F700EA954C /* toOpenSettingsViewController.swift in Sources */,
@@ -584,6 +588,7 @@
 			baseConfigurationReference = 84D999BE9A0FDDFFF00817B6 /* Pods-AustinForVeteransStartupWeekend.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XC8EEXBN9;
 				INFOPLIST_FILE = AustinForVeteransStartupWeekend/Info.plist;
@@ -591,8 +596,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.AustinForVeteransStartupWeekend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.HonorFlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,6 +609,7 @@
 			baseConfigurationReference = 4AC17C0CCED7A7ADB58BDB75 /* Pods-AustinForVeteransStartupWeekend.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3XC8EEXBN9;
 				INFOPLIST_FILE = AustinForVeteransStartupWeekend/Info.plist;
@@ -610,8 +617,9 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.george.AustinForVeteransStartupWeekend;
+				PRODUCT_BUNDLE_IDENTIFIER = com.george.HonorFlight;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

@@ -18,10 +18,13 @@ class MapkitViewController: UIViewController {
     @IBOutlet weak var mapView: MKMapView!
     let regionRadius: CLLocationDistance = 1000
     
+    @IBOutlet var navBar: UINavigationBar!
     // MARK: - View life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        let buttonItem = MKUserTrackingBarButtonItem(mapView: mapView)
+        navBar.topItem?.rightBarButtonItem = buttonItem
         let locationManager = CLLocationManager()
         locationManager.delegate = self as? CLLocationManagerDelegate
         locationManager.desiredAccuracy = kCLLocationAccuracyBest
